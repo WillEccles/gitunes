@@ -8,8 +8,17 @@ using namespace std;
 
 int main(int argc, char *argv[], char *envp[])
 {
-	// parse args
+	cout << argc << endl;
+	cout << argv[1] << endl;
+	if (argv[1] == "--install") {
+		cout << "got here" << endl;
+		// determine whether or not there is a path supplied
+		if (argc == 3) {
 
+		} else {
+			cout << "Error: no directory provided for installation." << endl;
+		}
+	}
     return 0;
 }
 
