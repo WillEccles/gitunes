@@ -10,9 +10,7 @@ if [ "$1" != "" ]; then
 	#create the directory if it doesn't exist
 	mkdir -p "$1"
 	
-	cd $1
-	
-	mkdir -p artists/
+	mkdir -p $1/artists/
 	
 	echo "$1" > ~/.gitunesprefs
 	git init
